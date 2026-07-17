@@ -89,50 +89,50 @@
 
 			});
 
-	// Menu.
-		var $menu = $('#menu');
+	// desplegable.
+		var $desplegable = $('#desplegable');
 
-		$menu.wrapInner('<div class="inner"></div>');
+		$desplegable.wrapInner('<div class="inner"></div>');
 
-		$menu._locked = false;
+		$desplegable._locked = false;
 
-		$menu._lock = function() {
+		$desplegable._lock = function() {
 
-			if ($menu._locked)
+			if ($desplegable._locked)
 				return false;
 
-			$menu._locked = true;
+			$desplegable._locked = true;
 
 			window.setTimeout(function() {
-				$menu._locked = false;
+				$desplegable._locked = false;
 			}, 350);
 
 			return true;
 
 		};
 
-		$menu._show = function() {
+		$desplegable._show = function() {
 
-			if ($menu._lock())
-				$body.addClass('is-menu-visible');
-
-		};
-
-		$menu._hide = function() {
-
-			if ($menu._lock())
-				$body.removeClass('is-menu-visible');
+			if ($desplegable._lock())
+				$body.addClass('is-desplegable-visible');
 
 		};
 
-		$menu._toggle = function() {
+		$desplegable._hide = function() {
 
-			if ($menu._lock())
-				$body.toggleClass('is-menu-visible');
+			if ($desplegable._lock())
+				$body.removeClass('is-desplegable-visible');
 
 		};
 
-		$menu
+		$desplegable._toggle = function() {
+
+			if ($desplegable._lock())
+				$body.toggleClass('is-desplegable-visible');
+
+		};
+
+		$desplegable
 			.appendTo($body)
 			.on('click', function(event) {
 				event.stopPropagation();
@@ -145,10 +145,10 @@
 				event.stopPropagation();
 
 				// Hide.
-					$menu._hide();
+					$desplegable._hide();
 
 				// Redirect.
-					if (href == '#menu')
+					if (href == '#desplegable')
 						return;
 
 					window.setTimeout(function() {
@@ -156,29 +156,29 @@
 					}, 350);
 
 			})
-			.append('<a class="close" href="#menu">Close</a>');
+			.append('<a class="close" href="#desplegable">Close</a>');
 
 		$body
-			.on('click', 'a[href="#menu"]', function(event) {
+			.on('click', 'a[href="#desplegable"]', function(event) {
 
 				event.stopPropagation();
 				event.preventDefault();
 
 				// Toggle.
-					$menu._toggle();
+					$desplegable._toggle();
 
 			})
 			.on('click', function(event) {
 
 				// Hide.
-					$menu._hide();
+					$desplegable._hide();
 
 			})
 			.on('keydown', function(event) {
 
 				// Hide on escape.
 					if (event.keyCode == 27)
-						$menu._hide();
+						$desplegable._hide();
 
 			});
 

@@ -1,4 +1,26 @@
-@import url(fontawesome-all.min.css);
+/*MY CSS RULES*/
+#galletesAnis, #galletesOli, #galletesCivada, #magdalenes, #xeixaInt, #arros, #blatMort, #blatEgipci, #espelta, #magranetes, #coquesPatata, #kombutxa, #kimchi, #pa, #rebosteria, #probiotics {
+    border-radius: 100%;
+}
+
+
+.separacio-formmulari{
+    border: 0;
+    border-bottom: solid 1px #c9c9c9;
+    margin: 0;
+}
+
+#footer > .inner .copyright {
+    text-align: center;
+}
+
+#desplegable{
+    text-transform: uppercase;
+    letter-spacing: 0.123456789vw;
+}
+
+
+@import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
 /*
@@ -16,7 +38,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, desplegable, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +48,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, desplegable, nav, section {
 	display: block;}
 
 body {
@@ -99,7 +121,11 @@ input, select, textarea {
 	}
 
 	body {
-		background: #ffffff;
+		 background: #ffffff; 
+        
+        
+    
+       
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -167,64 +193,95 @@ input, select, textarea {
 	}
 
 	h1 {
-		font-size: 2.75em;
-		font-weight: 700;
-		line-height: 1.3;
+        letter-spacing: 0.2626vw;
+        font-size: 2.2323em;
+		line-height: 1.5;
 		margin: 0 0 1em 0;
-		letter-spacing: -0.035em;
+		text-transform: uppercase;
+        font-weight: lighter;
+        
+	}
+
+    h2 {
+        letter-spacing: 0.1111vw;
+        font-size: 1.3333em;
+    
+        font-weight: lighter;
 	}
 
 		h1 a {
 			color: inherit;
 		}
 
-		@media screen and (max-width: 736px) {
+
+
+@media screen and (max-width: 1279px) {
+    
+    
 
 			h1 {
-				font-size: 2em;
+                
+				margin: 0 0 1.6666em 0;
+                
+			}
+
+		}
+
+		
+        
+
+		@media screen and (max-width: 360px) {
+
+			h1 {
+				
+                text-align: center;
+                
+				font-size: 1.4em;
+                font-weight: 222;
+				margin: 0 0 1em 0;
+			}
+            
+            h2 {
+				
+                
+                letter-spacing: 1.111vw;
+				
+                font-weight: 444;
 				margin: 0 0 1em 0;
 			}
 
 		}
 
-		@media screen and (max-width: 360px) {
 
-			h1 {
-				font-size: 1.75em;
-			}
-
-		}
 
 	h2, h3, h4, h5, h6 {
-		font-weight: 900;
+		
 		line-height: 1.5;
 		margin: 0 0 2em 0;
 		text-transform: uppercase;
-		letter-spacing: 0.35em;
+		
 	}
 
 		h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 		}
 
-	h2 {
-		font-size: 1.1em;
-	}
+	
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.111em;
 	}
 
 	h4 {
-		font-size: 0.8em;
+		font-size: 0.999em;
 	}
 
 	h5 {
-		font-size: 0.8em;
+		font-size: 0.888em;
 	}
 
 	h6 {
-		font-size: 0.8em;
+		font-size: 0.888em;
 	}
 
 	@media screen and (max-width: 980px) {
@@ -236,11 +293,8 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
-		h2 {
-			font-size: 1em;
-		}
-
+        
+        
 		h3 {
 			font-size: 0.8em;
 		}
@@ -358,19 +412,19 @@ input, select, textarea {
 		}
 
 		.row > .col-1 {
-			width: 8.33333%;
+			width: 8.3333333333%;
 		}
 
 		.row > .off-1 {
-			margin-left: 8.33333%;
+			margin-left: 8.3333333333%;
 		}
 
 		.row > .col-2 {
-			width: 16.66667%;
+			width: 16.6666666667%;
 		}
 
 		.row > .off-2 {
-			margin-left: 16.66667%;
+			margin-left: 16.6666666667%;
 		}
 
 		.row > .col-3 {
@@ -382,19 +436,19 @@ input, select, textarea {
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 33.3333333333%;
 		}
 
 		.row > .off-4 {
-			margin-left: 33.33333%;
+			margin-left: 33.3333333333%;
 		}
 
 		.row > .col-5 {
-			width: 41.66667%;
+			width: 41.6666666667%;
 		}
 
 		.row > .off-5 {
-			margin-left: 41.66667%;
+			margin-left: 41.6666666667%;
 		}
 
 		.row > .col-6 {
@@ -406,19 +460,19 @@ input, select, textarea {
 		}
 
 		.row > .col-7 {
-			width: 58.33333%;
+			width: 58.3333333333%;
 		}
 
 		.row > .off-7 {
-			margin-left: 58.33333%;
+			margin-left: 58.3333333333%;
 		}
 
 		.row > .col-8 {
-			width: 66.66667%;
+			width: 66.6666666667%;
 		}
 
 		.row > .off-8 {
-			margin-left: 66.66667%;
+			margin-left: 66.6666666667%;
 		}
 
 		.row > .col-9 {
@@ -430,19 +484,19 @@ input, select, textarea {
 		}
 
 		.row > .col-10 {
-			width: 83.33333%;
+			width: 83.3333333333%;
 		}
 
 		.row > .off-10 {
-			margin-left: 83.33333%;
+			margin-left: 83.3333333333%;
 		}
 
 		.row > .col-11 {
-			width: 91.66667%;
+			width: 91.6666666667%;
 		}
 
 		.row > .off-11 {
-			margin-left: 91.66667%;
+			margin-left: 91.6666666667%;
 		}
 
 		.row > .col-12 {
@@ -601,19 +655,19 @@ input, select, textarea {
 				}
 
 				.row > .col-1-xlarge {
-					width: 8.33333%;
+					width: 8.3333333333%;
 				}
 
 				.row > .off-1-xlarge {
-					margin-left: 8.33333%;
+					margin-left: 8.3333333333%;
 				}
 
 				.row > .col-2-xlarge {
-					width: 16.66667%;
+					width: 16.6666666667%;
 				}
 
 				.row > .off-2-xlarge {
-					margin-left: 16.66667%;
+					margin-left: 16.6666666667%;
 				}
 
 				.row > .col-3-xlarge {
@@ -625,19 +679,19 @@ input, select, textarea {
 				}
 
 				.row > .col-4-xlarge {
-					width: 33.33333%;
+					width: 33.3333333333%;
 				}
 
 				.row > .off-4-xlarge {
-					margin-left: 33.33333%;
+					margin-left: 33.3333333333%;
 				}
 
 				.row > .col-5-xlarge {
-					width: 41.66667%;
+					width: 41.6666666667%;
 				}
 
 				.row > .off-5-xlarge {
-					margin-left: 41.66667%;
+					margin-left: 41.6666666667%;
 				}
 
 				.row > .col-6-xlarge {
@@ -649,19 +703,19 @@ input, select, textarea {
 				}
 
 				.row > .col-7-xlarge {
-					width: 58.33333%;
+					width: 58.3333333333%;
 				}
 
 				.row > .off-7-xlarge {
-					margin-left: 58.33333%;
+					margin-left: 58.3333333333%;
 				}
 
 				.row > .col-8-xlarge {
-					width: 66.66667%;
+					width: 66.6666666667%;
 				}
 
 				.row > .off-8-xlarge {
-					margin-left: 66.66667%;
+					margin-left: 66.6666666667%;
 				}
 
 				.row > .col-9-xlarge {
@@ -673,19 +727,19 @@ input, select, textarea {
 				}
 
 				.row > .col-10-xlarge {
-					width: 83.33333%;
+					width: 83.3333333333%;
 				}
 
 				.row > .off-10-xlarge {
-					margin-left: 83.33333%;
+					margin-left: 83.3333333333%;
 				}
 
 				.row > .col-11-xlarge {
-					width: 91.66667%;
+					width: 91.6666666667%;
 				}
 
 				.row > .off-11-xlarge {
-					margin-left: 91.66667%;
+					margin-left: 91.6666666667%;
 				}
 
 				.row > .col-12-xlarge {
@@ -846,19 +900,19 @@ input, select, textarea {
 				}
 
 				.row > .col-1-large {
-					width: 8.33333%;
+					width: 8.3333333333%;
 				}
 
 				.row > .off-1-large {
-					margin-left: 8.33333%;
+					margin-left: 8.3333333333%;
 				}
 
 				.row > .col-2-large {
-					width: 16.66667%;
+					width: 16.6666666667%;
 				}
 
 				.row > .off-2-large {
-					margin-left: 16.66667%;
+					margin-left: 16.6666666667%;
 				}
 
 				.row > .col-3-large {
@@ -870,19 +924,19 @@ input, select, textarea {
 				}
 
 				.row > .col-4-large {
-					width: 33.33333%;
+					width: 33.3333333333%;
 				}
 
 				.row > .off-4-large {
-					margin-left: 33.33333%;
+					margin-left: 33.3333333333%;
 				}
 
 				.row > .col-5-large {
-					width: 41.66667%;
+					width: 41.6666666667%;
 				}
 
 				.row > .off-5-large {
-					margin-left: 41.66667%;
+					margin-left: 41.6666666667%;
 				}
 
 				.row > .col-6-large {
@@ -894,19 +948,19 @@ input, select, textarea {
 				}
 
 				.row > .col-7-large {
-					width: 58.33333%;
+					width: 58.3333333333%;
 				}
 
 				.row > .off-7-large {
-					margin-left: 58.33333%;
+					margin-left: 58.3333333333%;
 				}
 
 				.row > .col-8-large {
-					width: 66.66667%;
+					width: 66.6666666667%;
 				}
 
 				.row > .off-8-large {
-					margin-left: 66.66667%;
+					margin-left: 66.6666666667%;
 				}
 
 				.row > .col-9-large {
@@ -918,19 +972,19 @@ input, select, textarea {
 				}
 
 				.row > .col-10-large {
-					width: 83.33333%;
+					width: 83.3333333333%;
 				}
 
 				.row > .off-10-large {
-					margin-left: 83.33333%;
+					margin-left: 83.3333333333%;
 				}
 
 				.row > .col-11-large {
-					width: 91.66667%;
+					width: 91.6666666667%;
 				}
 
 				.row > .off-11-large {
-					margin-left: 91.66667%;
+					margin-left: 91.6666666667%;
 				}
 
 				.row > .col-12-large {
@@ -1091,19 +1145,19 @@ input, select, textarea {
 				}
 
 				.row > .col-1-medium {
-					width: 8.33333%;
+					width: 8.3333333333%;
 				}
 
 				.row > .off-1-medium {
-					margin-left: 8.33333%;
+					margin-left: 8.3333333333%;
 				}
 
 				.row > .col-2-medium {
-					width: 16.66667%;
+					width: 16.6666666667%;
 				}
 
 				.row > .off-2-medium {
-					margin-left: 16.66667%;
+					margin-left: 16.6666666667%;
 				}
 
 				.row > .col-3-medium {
@@ -1115,19 +1169,19 @@ input, select, textarea {
 				}
 
 				.row > .col-4-medium {
-					width: 33.33333%;
+					width: 33.3333333333%;
 				}
 
 				.row > .off-4-medium {
-					margin-left: 33.33333%;
+					margin-left: 33.3333333333%;
 				}
 
 				.row > .col-5-medium {
-					width: 41.66667%;
+					width: 41.6666666667%;
 				}
 
 				.row > .off-5-medium {
-					margin-left: 41.66667%;
+					margin-left: 41.6666666667%;
 				}
 
 				.row > .col-6-medium {
@@ -1139,19 +1193,19 @@ input, select, textarea {
 				}
 
 				.row > .col-7-medium {
-					width: 58.33333%;
+					width: 58.3333333333%;
 				}
 
 				.row > .off-7-medium {
-					margin-left: 58.33333%;
+					margin-left: 58.3333333333%;
 				}
 
 				.row > .col-8-medium {
-					width: 66.66667%;
+					width: 66.6666666667%;
 				}
 
 				.row > .off-8-medium {
-					margin-left: 66.66667%;
+					margin-left: 66.6666666667%;
 				}
 
 				.row > .col-9-medium {
@@ -1163,19 +1217,19 @@ input, select, textarea {
 				}
 
 				.row > .col-10-medium {
-					width: 83.33333%;
+					width: 83.3333333333%;
 				}
 
 				.row > .off-10-medium {
-					margin-left: 83.33333%;
+					margin-left: 83.3333333333%;
 				}
 
 				.row > .col-11-medium {
-					width: 91.66667%;
+					width: 91.6666666667%;
 				}
 
 				.row > .off-11-medium {
-					margin-left: 91.66667%;
+					margin-left: 91.6666666667%;
 				}
 
 				.row > .col-12-medium {
@@ -1336,19 +1390,19 @@ input, select, textarea {
 				}
 
 				.row > .col-1-small {
-					width: 8.33333%;
+					width: 8.3333333333%;
 				}
 
 				.row > .off-1-small {
-					margin-left: 8.33333%;
+					margin-left: 8.3333333333%;
 				}
 
 				.row > .col-2-small {
-					width: 16.66667%;
+					width: 16.6666666667%;
 				}
 
 				.row > .off-2-small {
-					margin-left: 16.66667%;
+					margin-left: 16.6666666667%;
 				}
 
 				.row > .col-3-small {
@@ -1360,19 +1414,19 @@ input, select, textarea {
 				}
 
 				.row > .col-4-small {
-					width: 33.33333%;
+					width: 33.3333333333%;
 				}
 
 				.row > .off-4-small {
-					margin-left: 33.33333%;
+					margin-left: 33.3333333333%;
 				}
 
 				.row > .col-5-small {
-					width: 41.66667%;
+					width: 41.6666666667%;
 				}
 
 				.row > .off-5-small {
-					margin-left: 41.66667%;
+					margin-left: 41.6666666667%;
 				}
 
 				.row > .col-6-small {
@@ -1384,19 +1438,19 @@ input, select, textarea {
 				}
 
 				.row > .col-7-small {
-					width: 58.33333%;
+					width: 58.3333333333%;
 				}
 
 				.row > .off-7-small {
-					margin-left: 58.33333%;
+					margin-left: 58.3333333333%;
 				}
 
 				.row > .col-8-small {
-					width: 66.66667%;
+					width: 66.6666666667%;
 				}
 
 				.row > .off-8-small {
-					margin-left: 66.66667%;
+					margin-left: 66.6666666667%;
 				}
 
 				.row > .col-9-small {
@@ -1408,19 +1462,19 @@ input, select, textarea {
 				}
 
 				.row > .col-10-small {
-					width: 83.33333%;
+					width: 83.3333333333%;
 				}
 
 				.row > .off-10-small {
-					margin-left: 83.33333%;
+					margin-left: 83.3333333333%;
 				}
 
 				.row > .col-11-small {
-					width: 91.66667%;
+					width: 91.6666666667%;
 				}
 
 				.row > .off-11-small {
-					margin-left: 91.66667%;
+					margin-left: 91.6666666667%;
 				}
 
 				.row > .col-12-small {
@@ -1581,19 +1635,19 @@ input, select, textarea {
 				}
 
 				.row > .col-1-xsmall {
-					width: 8.33333%;
+					width: 8.3333333333%;
 				}
 
 				.row > .off-1-xsmall {
-					margin-left: 8.33333%;
+					margin-left: 8.3333333333%;
 				}
 
 				.row > .col-2-xsmall {
-					width: 16.66667%;
+					width: 16.6666666667%;
 				}
 
 				.row > .off-2-xsmall {
-					margin-left: 16.66667%;
+					margin-left: 16.6666666667%;
 				}
 
 				.row > .col-3-xsmall {
@@ -1605,19 +1659,19 @@ input, select, textarea {
 				}
 
 				.row > .col-4-xsmall {
-					width: 33.33333%;
+					width: 33.3333333333%;
 				}
 
 				.row > .off-4-xsmall {
-					margin-left: 33.33333%;
+					margin-left: 33.3333333333%;
 				}
 
 				.row > .col-5-xsmall {
-					width: 41.66667%;
+					width: 41.6666666667%;
 				}
 
 				.row > .off-5-xsmall {
-					margin-left: 41.66667%;
+					margin-left: 41.6666666667%;
 				}
 
 				.row > .col-6-xsmall {
@@ -1629,19 +1683,19 @@ input, select, textarea {
 				}
 
 				.row > .col-7-xsmall {
-					width: 58.33333%;
+					width: 58.3333333333%;
 				}
 
 				.row > .off-7-xsmall {
-					margin-left: 58.33333%;
+					margin-left: 58.3333333333%;
 				}
 
 				.row > .col-8-xsmall {
-					width: 66.66667%;
+					width: 66.6666666667%;
 				}
 
 				.row > .off-8-xsmall {
-					margin-left: 66.66667%;
+					margin-left: 66.6666666667%;
 				}
 
 				.row > .col-9-xsmall {
@@ -1653,19 +1707,19 @@ input, select, textarea {
 				}
 
 				.row > .col-10-xsmall {
-					width: 83.33333%;
+					width: 83.3333333333%;
 				}
 
 				.row > .off-10-xsmall {
-					margin-left: 83.33333%;
+					margin-left: 83.3333333333%;
 				}
 
 				.row > .col-11-xsmall {
-					width: 91.66667%;
+					width: 91.6666666667%;
 				}
 
 				.row > .off-11-xsmall {
-					margin-left: 91.66667%;
+					margin-left: 91.6666666667%;
 				}
 
 				.row > .col-12-xsmall {
@@ -1809,30 +1863,14 @@ input, select, textarea {
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			display: inline-block;
+			font-family: FontAwesome;
 			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
+			font-weight: normal;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
 		}
 
 		.icon > .label {
 			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
 		}
 
 		.icon.style2 {
@@ -2205,8 +2243,10 @@ input, select, textarea {
 
 	textarea {
 		padding: 0;
-		min-height: 3.75em;
+		min-height: 3.14159265358979323846em;
 	}
+
+
 
 	input[type="checkbox"],
 	input[type="radio"] {
@@ -2239,14 +2279,10 @@ input, select, textarea {
 			input[type="radio"] + label:before {
 				-moz-osx-font-smoothing: grayscale;
 				-webkit-font-smoothing: antialiased;
-				display: inline-block;
+				font-family: FontAwesome;
 				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1;
+				font-weight: normal;
 				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
 			}
 
 			input[type="checkbox"] + label:before,
@@ -2255,14 +2291,13 @@ input, select, textarea {
 				border: solid 1px #c9c9c9;
 				content: '';
 				display: inline-block;
-				font-size: 0.8em;
-				height: 2.25em;
+				height: 1.8em;
 				left: 0;
-				line-height: 2.25em;
+				line-height: 1.725em;
 				position: absolute;
 				text-align: center;
 				top: 0;
-				width: 2.25em;
+				width: 1.8em;
 			}
 
 		input[type="checkbox"]:checked + label:before,
@@ -2582,7 +2617,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
-			width: calc(33.33333% - 2.5em);
+			width: calc(33.3333333333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
 		}
 
@@ -2634,12 +2669,10 @@ input, select, textarea {
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+                    background-color: #054c26;
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
-					opacity: 0.25;
-					z-index: 2;
 				}
 
 			.tiles article > a {
@@ -2706,15 +2739,15 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: #054C26;
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: #FCCB0B;
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: #E72700;
 			}
 
 			.tiles article.style4 > .image:before {
@@ -2767,15 +2800,45 @@ input, select, textarea {
 			opacity: 1;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2480px) {
+            
+            #header .logo {
+            
+            
+			margin: 0 0 1em 0!important;
+			
+		}
+           
 
 			.tiles {
-				margin: -1.25em 0 0 -1.25em;
+				margin: -1.75em 0 0 -1.75em;
 			}
 
 				.tiles article {
-					width: calc(33.33333% - 1.25em);
-					margin: 1.25em 0 0 1.25em;
+					width: calc(33.3333333333% - 1.75em);
+					margin: 1.75em 0 0 1.75em;
+				}
+
+		}
+
+
+		@media screen and (max-width: 1280px) {
+            
+            #header .logo {
+            
+            
+			margin: 0 0 1em 0!important;
+			
+		}
+           
+
+			.tiles {
+				margin: -1.5em 0 0 -1.5em;
+			}
+
+				.tiles article {
+					width: calc(33.3333333333% - 1.5em);
+					margin: 1.5em 0 0 1.5em;
 				}
 
 		}
@@ -2794,14 +2857,31 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
+            
+            #header .logo {
+            
+            
+			margin: 0 0 1em 0!important;
+			
+		}
+            
+
+			h1 {
+                letter-spacing: 1vw;
+				font-size: 2em;
+                font-weight: 333;
+				margin: 0 0 1em 0;
+                
+			}
 
 			.tiles {
 				margin: -1.25em 0 0 -1.25em;
+                
 			}
 
 				.tiles article {
 					width: calc(50% - 1.25em);
-					margin: 1.25em 0 0 1.25em;
+					margin: 1.25em 1.25em 1.25em 1.25em;
 				}
 
 					.tiles article:hover > .image {
@@ -2817,11 +2897,12 @@ input, select, textarea {
 
 			.tiles {
 				margin: 0;
+                text-align: center;
 			}
 
 				.tiles article {
-					width: 100%;
-					margin: 1.25em 0 0 0;
+					width: 88%;
+					
 				}
 
 		}
@@ -2836,7 +2917,7 @@ input, select, textarea {
 			display: block;
 			border-bottom: 0;
 			color: inherit;
-			font-weight: 900;
+			/*font-weight: 900;*/
 			letter-spacing: 0.35em;
 			margin: 0 0 2.5em 0;
 			text-decoration: none;
@@ -2855,8 +2936,8 @@ input, select, textarea {
 
 				#header .logo .symbol img {
 					display: block;
-					width: 2em;
-					height: 2em;
+					width: 10em;
+					height: 10em;
 				}
 
 		#header nav {
@@ -2900,7 +2981,7 @@ input, select, textarea {
 						text-transform: uppercase;
 					}
 
-					#header nav ul li a[href="#menu"] {
+					#header nav ul li a[href="#desplegable"] {
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
 						text-indent: 4em;
@@ -2910,7 +2991,7 @@ input, select, textarea {
 						white-space: nowrap;
 					}
 
-						#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+						#header nav ul li a[href="#desplegable"]:before, #header nav ul li a[href="#desplegable"]:after {
 							-moz-transition: opacity 0.2s ease;
 							-webkit-transition: opacity 0.2s ease;
 							-ms-transition: opacity 0.2s ease;
@@ -2927,21 +3008,21 @@ input, select, textarea {
 							background-size: 2em 2em;
 						}
 
-						#header nav ul li a[href="#menu"]:before {
+						#header nav ul li a[href="#desplegable"]:before {
 							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 							opacity: 0;
 						}
 
-						#header nav ul li a[href="#menu"]:after {
+						#header nav ul li a[href="#desplegable"]:after {
 							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
 							opacity: 1;
 						}
 
-						#header nav ul li a[href="#menu"]:hover:before {
+						#header nav ul li a[href="#desplegable"]:hover:before {
 							opacity: 1;
 						}
 
-						#header nav ul li a[href="#menu"]:hover:after {
+						#header nav ul li a[href="#desplegable"]:hover:after {
 							opacity: 0;
 						}
 
@@ -2956,13 +3037,13 @@ input, select, textarea {
 					top: 0.5em;
 				}
 
-					#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+					#header nav ul li a[href="#desplegable"]:before, #header nav ul li a[href="#desplegable"]:after {
 						background-size: 1.5em 1.5em;
 					}
 
 		}
 
-/* Menu */
+/* desplegable */
 
 	#wrapper {
 		-moz-transition: opacity 0.45s ease;
@@ -2972,7 +3053,7 @@ input, select, textarea {
 		opacity: 1;
 	}
 
-	#menu {
+	#desplegable {
 		-moz-transform: translateX(22em);
 		-webkit-transform: translateX(22em);
 		-ms-transform: translateX(22em);
@@ -2995,7 +3076,7 @@ input, select, textarea {
 		z-index: 10002;
 	}
 
-		#menu > .inner {
+		#desplegable > .inner {
 			-moz-transition: opacity 0.45s ease;
 			-webkit-transition: opacity 0.45s ease;
 			-ms-transition: opacity 0.45s ease;
@@ -3011,18 +3092,18 @@ input, select, textarea {
 			overflow-y: auto;
 		}
 
-			#menu > .inner > ul {
+			#desplegable > .inner > ul {
 				list-style: none;
 				margin: 0 0 1em 0;
 				padding: 0;
 			}
 
-				#menu > .inner > ul > li {
+				#desplegable > .inner > ul > li {
 					padding: 0;
 					border-top: solid 1px rgba(255, 255, 255, 0.15);
 				}
 
-					#menu > .inner > ul > li a {
+					#desplegable > .inner > ul > li a {
 						display: block;
 						padding: 1em 0;
 						line-height: 1.5;
@@ -3030,12 +3111,12 @@ input, select, textarea {
 						color: inherit;
 					}
 
-					#menu > .inner > ul > li:first-child {
+					#desplegable > .inner > ul > li:first-child {
 						border-top: 0;
 						margin-top: -1em;
 					}
 
-		#menu > .close {
+		#desplegable > .close {
 			-moz-transition: opacity 0.45s ease, -moz-transform 0.45s ease;
 			-webkit-transition: opacity 0.45s ease, -webkit-transform 0.45s ease;
 			-ms-transition: opacity 0.45s ease, -ms-transform 0.45s ease;
@@ -3060,7 +3141,8 @@ input, select, textarea {
 			white-space: nowrap;
 		}
 
-			#menu > .close:before, #menu > .close:after {
+
+			#desplegable > .close:before, #desplegable > .close:after {
 				-moz-transition: opacity 0.2s ease;
 				-webkit-transition: opacity 0.2s ease;
 				-ms-transition: opacity 0.2s ease;
@@ -3077,27 +3159,27 @@ input, select, textarea {
 				background-size: 2em 2em;
 			}
 
-			#menu > .close:before {
+			#desplegable > .close:before {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
 				opacity: 0;
 			}
 
-			#menu > .close:after {
+			#desplegable > .close:after {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
 				opacity: 1;
 			}
 
-			#menu > .close:hover:before {
+			#desplegable > .close:hover:before {
 				opacity: 1;
 			}
 
-			#menu > .close:hover:after {
+			#desplegable > .close:hover:after {
 				opacity: 0;
 			}
 
 		@media screen and (max-width: 736px) {
 
-			#menu {
+			#desplegable {
 				-moz-transform: translateX(16.5em);
 				-webkit-transform: translateX(16.5em);
 				-ms-transform: translateX(16.5em);
@@ -3105,30 +3187,30 @@ input, select, textarea {
 				width: 16.5em;
 			}
 
-				#menu > .inner {
+				#desplegable > .inner {
 					padding: 2.75em 1.5em;
 				}
 
-				#menu > .close {
+				#desplegable > .close {
 					top: 0.5em;
 					left: -4.25em;
 					width: 4.25em;
 					text-indent: 4.25em;
 				}
 
-					#menu > .close:before, #menu > .close:after {
+					#desplegable > .close:before, #desplegable > .close:after {
 						background-size: 1.5em 1.5em;
 					}
 
 		}
 
-	body.is-menu-visible #wrapper {
+	body.is-desplegable-visible #wrapper {
 		pointer-events: none;
 		cursor: default;
 		opacity: 0.25;
 	}
 
-	body.is-menu-visible #menu {
+	body.is-desplegable-visible #desplegable {
 		-moz-transform: translateX(0);
 		-webkit-transform: translateX(0);
 		-ms-transform: translateX(0);
@@ -3136,11 +3218,11 @@ input, select, textarea {
 		visibility: visible;
 	}
 
-		body.is-menu-visible #menu > * {
+		body.is-desplegable-visible #desplegable > * {
 			opacity: 1;
 		}
 
-		body.is-menu-visible #menu .close {
+		body.is-desplegable-visible #desplegable .close {
 			-moz-transform: scale(1.0) rotate(0deg);
 			-webkit-transform: scale(1.0) rotate(0deg);
 			-ms-transform: scale(1.0) rotate(0deg);
@@ -3164,8 +3246,19 @@ input, select, textarea {
 
 /* Footer */
 
-	#footer {
+/*
+
+ORIGINAL
+
+#footer {
 		padding: 5em 0 6em 0 ;
+		background-color: #f6f6f6;
+	}
+
+
+*/
+
+	#footer {
 		background-color: #f6f6f6;
 	}
 
@@ -3203,7 +3296,7 @@ input, select, textarea {
 				padding: 0;
 				margin-top: 5em;
 				list-style: none;
-				font-size: 0.8em;
+				font-size: 1.5em;
 				color: rgba(88, 88, 88, 0.5);
 			}
 
