@@ -1,6 +1,11 @@
 /*MY CSS RULES*/
 #galletesAnis, #galletesOli, #galletesCivada, #magdalenes, #xeixaInt, #arros, #blatMort, #blatEgipci, #espelta, #magranetes, #coquesPatata, #kombutxa, #kimchi, #pa, #rebosteria, #probiotics {
-    border-radius: 100%;
+/*    border-radius: 100%; */
+	display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* Això converteix el contenidor en quadrat */
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
