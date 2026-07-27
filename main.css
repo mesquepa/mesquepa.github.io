@@ -2939,10 +2939,10 @@ input, select, textarea {
 				margin-right: 0.65em;
 			}
 
-				#header .logo .symbol img {
+			#header .logo .symbol img { /*logo styles*/	
 					display: block;
-					width: 10em;
-					height: 10em;
+					width: 17em;
+					height: 20em;
 				}
 
 		#header nav {
