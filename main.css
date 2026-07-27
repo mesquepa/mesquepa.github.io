@@ -189,17 +189,17 @@ input, select, textarea {
 		font-weight: 900;
 	}
 
-	em, i {
+	, i {
 		font-style: italic;
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 2 0;
 	}
 
 	h1 {
         letter-spacing: 0.2626vw;
-        font-size: 2.2323em;
+        font-size: 2.2323;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
@@ -2941,8 +2941,8 @@ input, select, textarea {
 
 			#header .logo .symbol img { /*logo styles*/	
 					display: block;
-					width: 17em;
-					height: 20em;
+					width: 20em;
+					height: 17em;
 				}
 
 		#header nav {
