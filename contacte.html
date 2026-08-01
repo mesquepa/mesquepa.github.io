@@ -66,17 +66,15 @@
 											<div class="col-12">
     <ul class="actions">
         <li>
-            <!-- Enllaç amb API de WhatsApp -->
-            <a href="https://api.whatsapp.com/send?phone=34615910992" 
-               class="primary" 
-               target="_blank" 
-               rel="noopener noreferrer">
-               CONTACTA’NS!
-            </a>
+            <!-- Mantenim l'input type="submit" però li afegim un ID -->
+            <input type="submit" value="CONTACTA’NS!" class="primary" id="whatsappBtn" />
         </li>
         <!-- <li><input type="reset" value="Netejar" /></li> -->
     </ul>
 </div>
+
+<!-- JavaScript al final del body o en un fitxer extern -->
+
 										</div>
 									</form>
 								</section>
@@ -111,6 +109,29 @@
 			</div>
 
 		<!-- Scripts -->
+
+		    <script>
+    // Esperem que el DOM estigui carregat
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // Seleccionem el botó pel seu ID
+        var boton = document.getElementById('whatsappBtn');
+        
+        // Afegim l'esdeveniment de clic
+        boton.addEventListener('click', function(event) {
+            
+            // Evitem que s'enviï cap formulari (comportament per defecte de type="submit")
+            event.preventDefault();
+            
+            // Obrim l'API de WhatsApp en una pestanya nova
+            window.open('https://api.whatsapp.com/send?phone=34615910992', '_blank');
+            
+            // Si el vols obrir a la mateixa pestanya, substitueix per:
+            // window.location.href = 'https://api.whatsapp.com/send?phone=34615910992';
+        });
+        
+    });
+</script>
             <script src="contact-form-script.dev.js"></script>
         
         
