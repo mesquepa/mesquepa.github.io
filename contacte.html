@@ -11,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
- 
+
         body {
             min-height: 100vh;
             display: flex;
@@ -30,7 +30,7 @@
             /* Capa de transparencia usando pseudo-elemento */
             position: relative;
         }
- 
+
         /* Capa de transparencia del 20% (opacidad 0.2) */
         body::before {
             content: '';
@@ -43,7 +43,7 @@
             z-index: 0;
             pointer-events: none; /* Para que no interfiera con clicks */
         }
- 
+
         /* Contenedor principal centrado */
         .container {
             position: relative;
@@ -60,7 +60,7 @@
             backdrop-filter: blur(4px);
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
- 
+
         /* Estilos del contenido */
         h1 {
             font-size: clamp(2rem, 6vw, 4.5rem);
@@ -69,14 +69,14 @@
             color: #2d1b12;
             margin-bottom: 0.5rem;
         }
- 
+
         .subtitle {
             font-size: clamp(1rem, 2.5vw, 1.8rem);
             font-weight: 300;
             color: #5a3d2b;
             letter-spacing: 4px;
         }
- 
+
         .divider {
             width: 80px;
             height: 3px;
@@ -84,7 +84,7 @@
             margin: 1.5rem auto;
             border-radius: 2px;
         }
- 
+
         p {
             font-size: clamp(0.95rem, 1.2vw, 1.2rem);
             color: #3d2a1c;
@@ -92,14 +92,14 @@
             margin: 0 auto 1.5rem;
             line-height: 1.6;
         }
- 
+
         .contact-info {
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
             align-items: center;
         }
- 
+
         .contact-item {
             font-size: clamp(0.9rem, 1.1vw, 1.1rem);
             color: #4d3423;
@@ -109,13 +109,13 @@
             border: 1px solid rgba(139, 107, 79, 0.2);
             transition: all 0.3s ease;
         }
- 
+
         .contact-item:hover {
             background: rgba(139, 107, 79, 0.15);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
- 
+
         /* Media Queries para responsividad extra */
         @media (max-width: 480px) {
             .container {
@@ -129,7 +129,7 @@
                 text-align: center;
             }
         }
- 
+
         @media (min-width: 1200px) {
             .container {
                 padding: 3.5rem 5rem;
@@ -143,30 +143,11 @@
         <h1>MÉS QUE PA</h1>
         <div class="subtitle">· FORN ARTESANAL ·</div>
         <div class="divider"></div>
-        <p>Pa, rebosteria i probiòtics</p>
-	<p>Artesà · Ecològic · Local</p>
-
-
-		
+        <p></p>
         
         <div class="contact-info">
-            <span class="contact-item">📞</span>
-
-		<div class="col-12">
-  		  <ul class="actions">
-    		    <li>
-    	        <!-- Mantenim l'input type="submit" però li afegim un ID -->
-    	        <input type="submit" value="CONTACTA’NS!" class="primary" id="whatsappBtn">
-  		      </li>
-  		      <!-- <li><input type="reset" value="Netejar" /></li> -->
- 				   </ul>
-			</div>
-
-
-
-
-			
-            <!-- <span class="contact-item">✉️ info@mesquepa.com</span> -->
+            <span class="contact-item">📞 +34 615 910 992</span>
+            <span class="contact-item">✉️ info@mesquepa.com</span>
             <span class="contact-item">📍 Carrer del Mediterrani, 2 · Portocristo</span>
         </div>
     </div>
