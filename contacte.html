@@ -1,145 +1,156 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>MÉS QUE PA · FORN ARTESANAL</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="main.css" />
-		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="logo-whatsApp.svg" alt="Logo_WhatsApp" /></span>
-								</a>
-							<!-- Nav -->
-								
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					
-
-				<!-- Main -->
-					<div id="main">
-                        
-                        
-						<div class="inner">
-
-                            
-                            <!-- Form -->
-                            
-                            
-                            
-                            
-                            
-								<section>
-								<!--	<h2>Formulari de contacte</h2> -->
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-										<!--	<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nom" />
-											</div> -->
-										<!--	<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Correu electrònic" />
-											</div> -->
-                                            
-                                    
-                                            <hr class="separacio-formmulari">
-                                            
-										<!--	<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Escriu el teu missatge" rows="6"></textarea>
-											</div> -->
-											<div class="col-12">
-    <ul class="actions">
-        <li>
-            <!-- Mantenim l'input type="submit" però li afegim un ID -->
-            <input type="submit" value="CONTACTA’NS!" class="primary" id="whatsappBtn" />
-        </li>
-        <!-- <li><input type="reset" value="Netejar" /></li> -->
-    </ul>
-</div>
-
-<!-- JavaScript al final del body o en un fitxer extern -->
-
-										</div>
-									</form>
-								</section>
-
-
-
-							<!-- <h1>Nom producte</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Explicació</p>
-							<p>Ingredients</p> -->
-						</div> 
-                        
-                        
-                        
-                        
-					</div>
-
-			<!--	Footer -->
-					<footer id="footer">
-					<!--	<div class="inner">
-							<ul class="copyright">
-								
-									
-								
-								<li><a href="index.html" class="logo">
-									   <span class="symbol"><img src="MesQuePa_logo.png" alt="Logo_MesQuePa" /></span>
-								</a> &copy; MÉSQUEPA.</li>
-							</ul>
-						</div> -->
-					</footer> 
-
-			</div>
-
-		<!-- Scripts -->
-
-		    <script>
-    // Esperem que el DOM estigui carregat
-    document.addEventListener('DOMContentLoaded', function() {
-        
-        // Seleccionem el botó pel seu ID
-        var boton = document.getElementById('whatsappBtn');
-        
-        // Afegim l'esdeveniment de clic
-        boton.addEventListener('click', function(event) {
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉS QUE PA · FORN ARTESANAL</title>
+    <style>
+        /* Reset y configuración base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f0eb; /* Color de respaldo */
             
-            // Evitem que s'enviï cap formulari (comportament per defecte de type="submit")
-            event.preventDefault();
+            /* Fondo con la imagen y transparencia */
+            background-image: url('https://mesquepa.github.io/MesQuePa_logo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             
-            // Obrim l'API de WhatsApp en una pestanya nova
-            window.open('https://api.whatsapp.com/send?phone=34615910992', '_blank');
+            /* Capa de transparencia usando pseudo-elemento */
+            position: relative;
+        }
+ 
+        /* Capa de transparencia del 20% (opacidad 0.2) */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* 80% opaco = 20% transparencia */
+            z-index: 0;
+            pointer-events: none; /* Para que no interfiera con clicks */
+        }
+ 
+        /* Contenedor principal centrado */
+        .container {
+            position: relative;
+            z-index: 1; /* Por encima de la capa de transparencia */
+            text-align: center;
+            padding: 2rem;
+            max-width: 90%;
+            width: 100%;
             
-            // Si el vols obrir a la mateixa pestanya, substitueix per:
-            // window.location.href = 'https://api.whatsapp.com/send?phone=34615910992';
-        });
+            /* Estilo opcional para mejorar legibilidad */
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+ 
+        /* Estilos del contenido */
+        h1 {
+            font-size: clamp(2rem, 6vw, 4.5rem);
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #2d1b12;
+            margin-bottom: 0.5rem;
+        }
+ 
+        .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.8rem);
+            font-weight: 300;
+            color: #5a3d2b;
+            letter-spacing: 4px;
+        }
+ 
+        .divider {
+            width: 80px;
+            height: 3px;
+            background: #8b6b4f;
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+ 
+        p {
+            font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+            color: #3d2a1c;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.6;
+        }
+ 
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
+        }
+ 
+        .contact-item {
+            font-size: clamp(0.9rem, 1.1vw, 1.1rem);
+            color: #4d3423;
+            padding: 0.5rem 1.5rem;
+            background: rgba(255, 248, 240, 0.7);
+            border-radius: 30px;
+            border: 1px solid rgba(139, 107, 79, 0.2);
+            transition: all 0.3s ease;
+        }
+ 
+        .contact-item:hover {
+            background: rgba(139, 107, 79, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+ 
+        /* Media Queries para responsividad extra */
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+                margin: 1rem;
+                background-color: rgba(255, 255, 255, 0.92);
+            }
+            
+            .contact-item {
+                width: 100%;
+                text-align: center;
+            }
+        }
+ 
+        @media (min-width: 1200px) {
+            .container {
+                padding: 3.5rem 5rem;
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MÉS QUE PA</h1>
+        <div class="subtitle">· FORN ARTESANAL ·</div>
+        <div class="divider"></div>
+        <p>Pa, rebosteria i probiòtics</p>
+	<p>Artesà · Ecològic · Local</p>
         
-    });
-</script>
-            <script src="contact-form-script.dev.js"></script>
-        
-        
-			<script src="jquery.min.js"></script>
-			<script src="browser.min.js"></script>
-			<divc="breakpoints.min.js"></script>
-			<script src="util.js"></script>
-			<script src="main.js"></script>
-
-	</body>
+        <div class="contact-info">
+            <span class="contact-item">📞 +34 123 456 789</span>
+            <span class="contact-item">✉️ info@mesquepa.com</span>
+            <span class="contact-item">📍 Carrer del Forn, 12 · Barcelona</span>
+        </div>
+    </div>
+</body>
 </html>
