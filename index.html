@@ -1,121 +1,927 @@
-<!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>MÉS QUE PA</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="main.css" />
-		<noscript><link rel="stylesheet" href="noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Més Que Pa</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --green: #0a6e3a;
+      --red: #b52b16;
+      --yellow: #cca300;
+      --shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; }
+    a { color: inherit; text-decoration: none; }
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="MesQuePa_logo.png" alt="Logo_MesQuePa" /></span>
-										<span class="title">MÉS       </span>
-										<span class="title">    QUE   </span>
-										<span class="title">        PA</span>
-								</a>
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 15px 20px; background: #fff; box-shadow: var(--shadow);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo-area { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+    .logo-area img { height: 40px; width: auto; }
+    .logo-text { font-weight: 300; letter-spacing: 2px; font-size: 14px; }
+    .controls { display: flex; gap: 15px; align-items: center; }
+    .lang-btn { background: none; border: 1px solid #ccc; padding: 5px 10px; border-radius: 20px; cursor: pointer; font-size: 14px; }
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#desplegable">MENÚ</a></li>
-									</ul>
-								</nav>
+    .breadcrumb {
+      padding: 15px 20px; font-size: 13px; color: #777;
+      background: #f1f1f1; display: none; flex-wrap: wrap; gap: 5px;
+    }
+    .breadcrumb.show { display: flex; }
+    .breadcrumb span { cursor: pointer; }
+    .breadcrumb span:hover { color: var(--text); text-decoration: underline; }
+    .breadcrumb .sep { cursor: default; margin: 0 5px; }
+    .breadcrumb .sep:hover { text-decoration: none; color: #777; }
 
-						</div>
-					</header>
+    main { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
 
-				<!-- Menu -->
-					<nav id="desplegable">
-						<ul>
-							<li><a href="contacte.html">Contacte</a></li>
-						</ul>
-					</nav>
+    .landing-grid {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;
+      margin-top: 50px;
+    }
+    .circle-btn {
+      width: 250px; height: 250px; border-radius: 50%;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: #fff; font-size: 16px; letter-spacing: 1px; text-align: center;
+      cursor: pointer; box-shadow: var(--shadow); transition: transform 0.3s, box-shadow 0.3s;
+      border: none; outline: none; padding: 20px; position: relative;
+    }
+    .circle-btn:hover { transform: scale(1.05); box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+    .circle-pa { background-color: var(--green); }
+    .circle-probiotics { background-color: var(--red); }
+    .circle-artesanies { background-color: var(--yellow); color: #fff; }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-                            
-							<header>
-                            <!--    <h2>Elaboració de Pans i altres productes ecològics</h2> -->
-								
-							</header>
-                            
-							<section class="tiles">
-                                
-                                <article class="style1">
-									<span class="image" id="rebosteria">
-										<img src="pic02.jpg" alt="Rebosteria" />
-									</span>
-									<a href="pa-i-rebosteria.html">
-										<h2>Pa i Rebosteria</h2>
-										<!--<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div> -->
-									</a>
-								</article>
-								
-                                <article class="style3">
-									<span class="image" id="probiotics">
-										<img src="pic09.jpg" alt="Probiòtics" />
-									</span>
-									<a href="probiotics.html">
-										<h2>Probiòtics</h2>
-										<!--<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div> -->
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image" id="pa">
-										<img src="pic05.jpg" alt="Pa" />
-									</span>
-									<a href="informacio.html">
-										<h2>Artesanies</h2>
-										<!--<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div> 
-									</a>
-								</article> 
-                                
-							</section>
-						</div>
-					</div>
+    .list-title { text-align: center; font-size: 24px; font-weight: 300; margin-bottom: 30px; letter-spacing: 1px; }
+    .grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;
+    }
+    .card {
+      background: #fff; border-radius: 10px; overflow: hidden; box-shadow: var(--shadow);
+      transition: transform 0.2s; cursor: pointer; position: relative;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card-img {
+      height: 150px; background: #eee; width: 100%; object-fit: cover; display: block;
+    }
+    .card-placeholder {
+      height: 150px; background: #eee; width: 100%; display: flex; align-items: center; justify-content: center;
+      color: #aaa; font-size: 13px; letter-spacing: 1px;
+    }
+    .card-content { padding: 15px; }
+    .card-title { font-size: 18px; margin-bottom: 5px; }
+    .card-price { font-weight: bold; color: var(--text); font-size: 16px; margin-top: 10px; }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							
-							<ul class="copyright" style="transform: rotate(180deg); display: inline-block; list-style: none; padding: 0; margin: 0;">
-							    <li style="transform: rotate(-180deg); display: inline-block;">
-							        &copy; 2026 MÉSQUEPA.
-							    </li>
-							</ul>
-                            
-						</div>
-					</footer>
+    .product-view {
+      display: flex; gap: 40px; background: #fff; padding: 30px; border-radius: 10px; box-shadow: var(--shadow); flex-wrap: wrap;
+      position: relative;
+    }
+    .product-img { flex: 1; min-width: 250px; max-width: 400px; height: auto; border-radius: 10px; object-fit: cover; }
+    .product-placeholder {
+      flex: 1; min-width: 250px; max-width: 400px; height: 300px; border-radius: 10px;
+      background: #eee; display: flex; align-items: center; justify-content: center; color: #aaa;
+    }
+    .product-info { flex: 2; min-width: 250px; }
+    .product-info h1 { font-size: 28px; font-weight: 400; margin-bottom: 10px; }
+    .product-info .price { font-size: 24px; color: var(--green); font-weight: bold; margin-bottom: 20px; }
+    .product-info .desc { font-size: 16px; margin-bottom: 20px; }
+    .product-info .ingredients { font-size: 14px; color: #666; background: #f9f9f9; padding: 15px; border-radius: 8px; }
 
-			</div>
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+      z-index: 1000; align-items: center; justify-content: center; padding: 20px;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal {
+      background: #fff; padding: 30px; border-radius: 10px; width: 100%; max-width: 500px;
+      max-height: 90vh; overflow-y: auto;
+    }
+    .modal h3 { margin-bottom: 20px; font-weight: 500; }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 13px; margin-bottom: 5px; color: #555; }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-family: inherit;
+    }
+    .modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+    .btn { padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    .btn-primary { background: var(--green); color: #fff; }
+    .btn-secondary { background: #eee; color: #333; }
+    .btn-danger { background: var(--red); color: #fff; }
 
-		<!-- Scripts -->
-			<script src="jquery.min.js"></script>
-			<script src="browser.min.js"></script>
-			<script src="breakpoints.min.js"></script>
-			<script src="util.js"></script>
-			<script src="main.js"></script>
+    .admin-bar { background: #000; color: #fff; text-align: center; padding: 10px; font-size: 14px; display: none; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
+    .admin-bar.show { display: flex; }
+    .admin-bar button {
+      background: var(--green); color: #fff; border: none; padding: 5px 10px; border-radius: 4px;
+      cursor: pointer; font-size: 13px;
+    }
+    .admin-bar button.danger { background: var(--red); }
+    .admin-bar button.neutral { background: #555; }
+    .admin-edit-btn {
+      position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.9);
+      border: 1px solid #ccc; border-radius: 50%; width: 30px; height: 30px;
+      display: none; align-items: center; justify-content: center; cursor: pointer; z-index: 10;
+      font-size: 14px;
+    }
+    .admin-edit-btn:hover { background: #fff; }
+    body.is-admin .admin-edit-btn { display: flex; }
+    .add-btn {
+      display: none; margin: 20px auto; padding: 10px 20px; background: var(--green); color: #fff;
+      border: none; border-radius: 5px; cursor: pointer; font-weight: bold;
+    }
+    body.is-admin .add-btn { display: block; }
 
-	</body>
+    .loading { text-align: center; padding: 60px 20px; color: #777; }
+    .error-box { text-align: center; padding: 60px 20px; color: var(--red); }
+    .error-box small { color: #777; }
+
+    @media (max-width: 600px) {
+      .circle-btn { width: 200px; height: 200px; font-size: 14px; }
+      .product-view { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="admin-bar" id="adminBar">
+    <span>🔧 Mode Edició Actiu</span>
+    <button onclick="exportJson()">Exportar db.json</button>
+    <button onclick="document.getElementById('importFile').click()">Importar db.json</button>
+    <button class="neutral" onclick="restoreFromDb()">Restaurar db.json</button>
+    <button class="danger" onclick="logoutAdmin()">Sortir d'Admin</button>
+    <input type="file" id="importFile" accept="application/json" style="display:none" onchange="importJson(event)">
+  </div>
+
+  <header>
+    <div class="logo-area" onclick="navigate([])">
+      <img src="https://mesquepa.github.io/logo.png" onerror="this.style.display='none'" alt="Logo">
+      <div class="logo-text">MÉS QUE PA</div>
+    </div>
+    <div class="controls">
+      <button class="lang-btn" id="langBtn" onclick="toggleLang()">🇦🇩 CAT</button>
+      <button class="lang-btn" onclick="tryAdminLogin()" title="Admin">⚙️</button>
+    </div>
+  </header>
+
+  <div class="breadcrumb" id="breadcrumb"></div>
+
+  <main id="app">
+    <div class="loading">Carregant dades...</div>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modalContent"></div>
+  </div>
+
+  <!-- AQUÍ ESTÀ LA MAGIA: El JSON incrustat perquè funcioni en local sense servidor -->
+  <script id="embedded-db" type="application/json">
+{
+  "id": "root",
+  "type": "root",
+  "children": {
+    "pa": {
+      "id": "pa",
+      "type": "category",
+      "name": {
+        "ca": "PA I REBOSTERIA",
+        "en": "BREAD & BAKERY"
+      },
+      "color": "green",
+      "children": {
+        "pans": {
+          "id": "pans",
+          "type": "subcategory",
+          "name": { "ca": "Pa", "en": "Bread" },
+          "children": {
+            "integrals": {
+              "id": "integrals",
+              "type": "subcategory",
+              "name": { "ca": "Integrals", "en": "Wholemeal" },
+              "children": {
+                "xeixa": {
+                  "id": "xeixa", "type": "product",
+                  "name": { "ca": "Pa de Xeixa", "en": "Wholemeal Xeixa Bread" },
+                  "desc": { "ca": "Pa integral de farina de Xeixa.", "en": "Wholemeal bread made with Xeixa flour." },
+                  "price": "3.50", "image": "",
+                  "ingredients": { "ca": "Farina integral de Xeixa, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Xeixa flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "xeixa-llavors": {
+                  "id": "xeixa-llavors", "type": "product",
+                  "name": { "ca": "Pa de Xeixa amb Llavors", "en": "Wholemeal Xeixa Bread with Seeds" },
+                  "desc": { "ca": "Pa integral de farina de Xeixa amb llavors.", "en": "Wholemeal bread made with Xeixa flour and seeds." },
+                  "price": "3.80", "image": "",
+                  "ingredients": { "ca": "Farina integral de Xeixa, llavors, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Xeixa flour, seeds, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "xeixa-anous": {
+                  "id": "xeixa-anous", "type": "product",
+                  "name": { "ca": "Pa de Xeixa amb Anous", "en": "Wholemeal Xeixa Bread with Walnuts" },
+                  "desc": { "ca": "Pa integral de farina de Xeixa amb anous.", "en": "Wholemeal bread made with Xeixa flour and walnuts." },
+                  "price": "4.20", "image": "",
+                  "ingredients": { "ca": "Farina integral de Xeixa, anous, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Xeixa flour, walnuts, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "espelta": {
+                  "id": "espelta", "type": "product",
+                  "name": { "ca": "Pa d'Espelta", "en": "Wholemeal Spelt Bread" },
+                  "desc": { "ca": "Pa integral de farina d'Espelta.", "en": "Wholemeal bread made with spelt flour." },
+                  "price": "4.00", "image": "",
+                  "ingredients": { "ca": "Farina integral d'Espelta, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal spelt flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "espelta-carbassa": {
+                  "id": "espelta-carbassa", "type": "product",
+                  "name": { "ca": "Pa d'Espelta amb Llavors de Carabassa", "en": "Wholemeal Spelt Bread with Pumpkin Seeds" },
+                  "desc": { "ca": "Pa integral de farina d'Espelta amb llavors de carabassa.", "en": "Wholemeal bread made with spelt flour and pumpkin seeds." },
+                  "price": "4.30", "image": "",
+                  "ingredients": { "ca": "Farina integral d'Espelta, llavors de carabassa, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal spelt flour, pumpkin seeds, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "espelta-sesam": {
+                  "id": "espelta-sesam", "type": "product",
+                  "name": { "ca": "Pa d'Espelta i Sésam", "en": "Wholemeal Spelt & Sesame Bread" },
+                  "desc": { "ca": "Pa integral de farina d'Espelta i sésam.", "en": "Wholemeal bread made with spelt flour and sesame." },
+                  "price": "4.20", "image": "",
+                  "ingredients": { "ca": "Farina integral d'Espelta, sésam, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal spelt flour, sesame, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "espelta-segol": {
+                  "id": "espelta-segol", "type": "product",
+                  "name": { "ca": "Pa d'Espelta i Ségol", "en": "Wholemeal Spelt & Rye Bread" },
+                  "desc": { "ca": "Pa integral de farina d'Espelta i ségol.", "en": "Wholemeal bread made with spelt and rye flour." },
+                  "price": "4.20", "image": "",
+                  "ingredients": { "ca": "Farina integral d'Espelta, farina de ségol, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal spelt flour, rye flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blat-mort": {
+                  "id": "blat-mort", "type": "product",
+                  "name": { "ca": "Pa de Blat Mort", "en": "Wholemeal Blat Mort Bread" },
+                  "desc": { "ca": "Pa integral de farina de Blat Mort.", "en": "Wholemeal bread made with Blat Mort flour." },
+                  "price": "4.00", "image": "",
+                  "ingredients": { "ca": "Farina integral de Blat Mort, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Blat Mort flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blat-mort-pipes": {
+                  "id": "blat-mort-pipes", "type": "product",
+                  "name": { "ca": "Pa de Blat Mort amb Pipes", "en": "Wholemeal Blat Mort Bread with Sunflower Seeds" },
+                  "desc": { "ca": "Pa integral de farina de Blat Mort amb pipes.", "en": "Wholemeal bread made with Blat Mort flour and sunflower seeds." },
+                  "price": "4.30", "image": "",
+                  "ingredients": { "ca": "Farina integral de Blat Mort, pipes, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Blat Mort flour, sunflower seeds, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blat-egipci": {
+                  "id": "blat-egipci", "type": "product",
+                  "name": { "ca": "Pa de Blat Egipci", "en": "Wholemeal Egyptian Wheat Bread" },
+                  "desc": { "ca": "Pa integral de farina de Blat Egipci.", "en": "Wholemeal bread made with Egyptian wheat flour." },
+                  "price": "4.00", "image": "",
+                  "ingredients": { "ca": "Farina integral de Blat Egipci, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Egyptian wheat flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blat-egipci-pipes": {
+                  "id": "blat-egipci-pipes", "type": "product",
+                  "name": { "ca": "Pa de Blat Egipci amb Pipes", "en": "Wholemeal Egyptian Wheat Bread with Sunflower Seeds" },
+                  "desc": { "ca": "Pa integral de farina de Blat Egipci amb pipes.", "en": "Wholemeal bread made with Egyptian wheat flour and sunflower seeds." },
+                  "price": "4.30", "image": "",
+                  "ingredients": { "ca": "Farina integral de Blat Egipci, pipes, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal Egyptian wheat flour, sunflower seeds, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "arros": {
+                  "id": "arros", "type": "product",
+                  "name": { "ca": "Pa d'Arròs", "en": "Wholemeal Rice Bread" },
+                  "desc": { "ca": "Pa integral d'arròs.", "en": "Wholemeal rice bread." },
+                  "price": "4.00", "image": "",
+                  "ingredients": { "ca": "Farina d'arròs integral, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Wholemeal rice flour, Bioreal yeast, revitalised water and sea salt." }
+                }
+              }
+            },
+            "morenos": {
+              "id": "morenos", "type": "subcategory",
+              "name": { "ca": "Morenos", "en": "Brown" },
+              "children": {
+                "blat-mort-moreno": {
+                  "id": "blat-mort-moreno", "type": "product",
+                  "name": { "ca": "Pa de Blat Mort Moreno", "en": "Brown Blat Mort Bread" },
+                  "desc": { "ca": "Pa moreno de farina de Blat Mort.", "en": "Brown bread made with Blat Mort flour." },
+                  "price": "3.80", "image": "",
+                  "ingredients": { "ca": "Farina de Blat Mort, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Blat Mort flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blat-mort-lli-aubercoc": {
+                  "id": "blat-mort-lli-aubercoc", "type": "product",
+                  "name": { "ca": "Pa de Blat Mort amb Lli i Aubercoc", "en": "Brown Blat Mort Bread with Flax & Apricot" },
+                  "desc": { "ca": "Pa moreno de farina de Blat Mort amb lli i aubercoc.", "en": "Brown bread made with Blat Mort flour, flax and apricot." },
+                  "price": "4.30", "image": "",
+                  "ingredients": { "ca": "Farina de Blat Mort, lli, aubercoc, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Blat Mort flour, flax, apricot, Bioreal yeast, revitalised water and sea salt." }
+                }
+              }
+            },
+            "blancs": {
+              "id": "blancs", "type": "subcategory",
+              "name": { "ca": "Blancs", "en": "White" },
+              "children": {
+                "blanc-llis": {
+                  "id": "blanc-llis", "type": "product",
+                  "name": { "ca": "Pa Blanc Llis", "en": "Plain White Bread" },
+                  "desc": { "ca": "Pa blanc de farina d'Espelta i Blat.", "en": "White bread made with spelt and wheat flour." },
+                  "price": "2.50", "image": "",
+                  "ingredients": { "ca": "Farina d'Espelta, farina de blat, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Spelt flour, wheat flour, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blanc-llavors": {
+                  "id": "blanc-llavors", "type": "product",
+                  "name": { "ca": "Pa Blanc amb Llavors", "en": "White Bread with Seeds" },
+                  "desc": { "ca": "Pa blanc de farina d'Espelta i Blat amb llavors.", "en": "White bread made with spelt and wheat flour and seeds." },
+                  "price": "2.80", "image": "",
+                  "ingredients": { "ca": "Farina d'Espelta, farina de blat, llavors, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Spelt flour, wheat flour, seeds, Bioreal yeast, revitalised water and sea salt." }
+                },
+                "blanc-curcuma": {
+                  "id": "blanc-curcuma", "type": "product",
+                  "name": { "ca": "Pa Blanc amb Cúrcuma", "en": "Turmeric White Bread" },
+                  "desc": { "ca": "Pa amb cúrcuma de farines d'Espelta, Blat i Blat Mort.", "en": "Turmeric bread made with spelt, wheat and Blat Mort flours." },
+                  "price": "3.20", "image": "",
+                  "ingredients": { "ca": "Farines d'Espelta, Blat i Blat Mort, cúrcuma, llevat Bioreal, aigua vital·litzada i sal marina.", "en": "Spelt, wheat and Blat Mort flours, turmeric, Bioreal yeast, revitalised water and sea salt." }
+                }
+              }
+            }
+          }
+        },
+        "rebosteria": {
+          "id": "rebosteria", "type": "subcategory",
+          "name": { "ca": "Rebosteria", "en": "Bakery" },
+          "children": {
+            "galetes-oli": {
+              "id": "galetes-oli", "type": "product",
+              "name": { "ca": "Galetes d'Oli", "en": "Olive Oil Biscuits" },
+              "desc": { "ca": "Galetes integrals d'espelta amb llavoretes de lli. Salades.", "en": "Wholemeal spelt biscuits with flax seeds. Savoury." },
+              "price": "5.00", "image": "",
+              "ingredients": { "ca": "Farina integral d'espelta, oli d'oliva, llavors de lli, sal marina.", "en": "Wholemeal spelt flour, olive oil, flax seeds, sea salt." }
+            },
+            "galetes-anis": {
+              "id": "galetes-anis", "type": "product",
+              "name": { "ca": "Galetes d'Anís", "en": "Aniseed Biscuits" },
+              "desc": { "ca": "Galetes cruixents i amb un tòc d'anís. Dolces.", "en": "Crunchy biscuits with a hint of aniseed. Sweet." },
+              "price": "5.00", "image": "",
+              "ingredients": { "ca": "Farina, sucre, anís, oli, llevat i sal.", "en": "Flour, sugar, aniseed, oil, yeast and salt." }
+            },
+            "galetes-civada-sesam": {
+              "id": "galetes-civada-sesam", "type": "product",
+              "name": { "ca": "Galetes de Civada i Sésam", "en": "Oat & Sesame Biscuits" },
+              "desc": { "ca": "Galetes cruixents, dolces i molt energètiques.", "en": "Crunchy, sweet and very energising biscuits." },
+              "price": "5.50", "image": "",
+              "ingredients": { "ca": "Civada, sésam, sucre, oli i sal.", "en": "Oats, sesame, sugar, oil and salt." }
+            },
+            "magdalenes": {
+              "id": "magdalenes", "type": "product",
+              "name": { "ca": "Magdalenes Veganes", "en": "Vegan Muffins" },
+              "desc": { "ca": "Magdalenes veganes sense sucre.", "en": "Vegan, sugar-free muffins." },
+              "price": "6.00", "image": "",
+              "ingredients": { "ca": "Farina integral d'espelta, xia, xarop d'agave, llet de civada, oli d'oliva extra, oli de gira-sol, vainilla, bicarbonat Bioreal i sal marina.", "en": "Wholemeal spelt flour, chia, agave syrup, oat milk, extra virgin olive oil, sunflower oil, vanilla, Bioreal bicarbonate and sea salt." }
+            }
+          }
+        }
+      }
+    },
+    "probiotics": {
+      "id": "probiotics", "type": "category",
+      "name": { "ca": "PROBIÒTICS", "en": "PROBIOTICS" },
+      "color": "red",
+      "children": {
+        "kimchi": {
+          "id": "kimchi", "type": "product",
+          "name": { "ca": "Kimchi", "en": "Kimchi" },
+          "desc": { "ca": "Increïble aliment probiòtic i gran complement gastronòmic per completar les menjades. Sense pasteuritzar.", "en": "An incredible probiotic food and a great culinary accompaniment to complete your meals. Unpasteurised." },
+          "price": "7.00", "image": "",
+          "ingredients": { "ca": "Col de varietat local fermentada 8/10 setmanes, llet d'arròs i coco, ceba tendre, alls, gingebre, cayena, pebre bo, cúrcuma, comí negre.", "en": "Locally grown cabbage fermented for 8–10 weeks, rice and coconut milk, spring onion, garlic, ginger, cayenne, allspice, turmeric, black cumin." }
+        },
+        "kombucha": {
+          "id": "kombucha", "type": "product",
+          "name": { "ca": "Tè Kombucha", "en": "Kombucha Tea" },
+          "desc": { "ca": "Beguda artesana refrescant, enzimàtica i probiòtica. BIO.", "en": "A refreshing, enzyme-rich, probiotic artisan drink. Organic." },
+          "price": "4.50", "image": "",
+          "ingredients": { "ca": "Tè negre i verd, sucre de canya, aigua vital·litzada i cultiu.", "en": "Black and green tea, cane sugar, revitalised water and culture." }
+        }
+      }
+    },
+    "artesanies": {
+      "id": "artesanies", "type": "category",
+      "name": { "ca": "ARTESANIES", "en": "ARTISAN GOODS" },
+      "color": "yellow",
+      "children": {
+        "altres-conserves": {
+          "id": "altres-conserves", "type": "product",
+          "name": { "ca": "Altres Conserves", "en": "Other Preserves" },
+          "desc": { "ca": "Conserves artesanes de temporada.", "en": "Seasonal artisan preserves." },
+          "price": "", "image": "",
+          "ingredients": { "ca": "Fruita o verdura de temporada, sucre, vinagre i espècies.", "en": "Seasonal fruit or vegetables, sugar, vinegar and spices." }
+        }
+      }
+    }
+  }
+}
+  </script>
+
+  <script>
+    /* =========================================
+       1. ESTAT I CONFIGURACIÓ
+    ========================================= */
+    let data = null;
+    let currentPath = [];
+    let lang = 'ca';
+    let isAdmin = false;
+    let isLoading = true;
+    const ADMIN_PASSWORD = "admin123";
+    const STORAGE_KEY = "mesquepa_data";
+
+    /* =========================================
+       2. CARREGAR DADES
+    ========================================= */
+    async function loadData() {
+      let baseData = null;
+      
+      // 1. Intentem carregar db.json (funciona a GitHub Pages i servidors locals)
+      try {
+        const res = await fetch('db.json', { cache: 'no-store' });
+        if (res.ok) {
+          baseData = await res.json();
+        }
+      } catch (e) {
+        console.warn('No s\'ha pogut fer fetch de db.json. Fent servir les dades integrades.', e);
+      }
+
+      // 2. Si falla (ex: obert en local a Android), usem el JSON incrustat
+      if (!baseData) {
+        const embedded = document.getElementById('embedded-db');
+        if (embedded) {
+          try {
+            baseData = JSON.parse(embedded.textContent);
+          } catch (e) {
+            console.error('Error al llegir el JSON incrustat', e);
+          }
+        }
+      }
+
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try {
+          data = JSON.parse(saved);
+        } catch (e) {
+          data = baseData;
+          localStorage.removeItem(STORAGE_KEY);
+        }
+      } else {
+        data = baseData;
+      }
+
+      isLoading = false;
+
+      if (!data) {
+        document.getElementById('app').innerHTML =
+          '<div class="error-box">No s\'ha pogut carregar la base de dades.<br>' +
+          'Comprova que <strong>db.json</strong> és a la mateixa carpeta o que el JSON incrustat és correcte.</div>';
+        return;
+      }
+
+      render();
+    }
+
+    /* =========================================
+       3. NAVEGACIÓ I RENDERITZAT
+    ========================================= */
+    function getCurrentNode() {
+      if (!data) return null;
+      let node = data;
+      for (let id of currentPath) {
+        if (node.children && node.children[id]) {
+          node = node.children[id];
+        } else {
+          return null;
+        }
+      }
+      return node;
+    }
+
+    function navigate(pathArray) {
+      currentPath = pathArray;
+      render();
+      window.scrollTo(0, 0);
+    }
+
+    function toggleLang() {
+      lang = lang === 'ca' ? 'en' : 'ca';
+      document.getElementById('langBtn').innerText = lang === 'ca' ? '🇦🇩 CAT' : '🇬🇧 ENG';
+      render();
+    }
+
+    function renderBreadcrumb() {
+      const bc = document.getElementById('breadcrumb');
+      if (!data || currentPath.length === 0) {
+        bc.classList.remove('show');
+        bc.innerHTML = '';
+        return;
+      }
+      bc.classList.add('show');
+      let html = '<span onclick="navigate([])">' + (lang === 'ca' ? 'Inici' : 'Home') + '</span>';
+      let tempPath = [];
+      let tempNode = data;
+
+      for (let id of currentPath) {
+        tempPath.push(id);
+        tempNode = tempNode.children[id];
+        if (!tempNode) break;
+        html += ' <span class="sep">/</span> ';
+        html += '<span onclick=\'navigate(' + JSON.stringify(tempPath) + ')\'>' +
+          escapeHtml(tempNode.name[lang]) + '</span>';
+      }
+      bc.innerHTML = html;
+    }
+
+    function render() {
+      const app = document.getElementById('app');
+      if (isLoading) {
+        app.innerHTML = '<div class="loading">Carregant dades...</div>';
+        return;
+      }
+      if (!data) return;
+
+      const node = getCurrentNode();
+      renderBreadcrumb();
+
+      if (!node) {
+        app.innerHTML = '<div class="error-box">No trobat</div>';
+        return;
+      }
+
+      /* LANDING: 3 CERCLES */
+      if (node.type === 'root') {
+        let html = '<div class="landing-grid">';
+        const colors = { 'pa': 'circle-pa', 'probiotics': 'circle-probiotics', 'artesanies': 'circle-artesanies' };
+        for (let key in node.children) {
+          let child = node.children[key];
+          html += '<button class="circle-btn ' + (colors[key] || '') + '" onclick=\'navigate(' +
+            JSON.stringify([key]) + ')\'>' +
+            '<span>' + escapeHtml(child.name[lang]) + '</span>' +
+            '</button>';
+        }
+        html += '</div>';
+        app.innerHTML = html;
+        return;
+      }
+
+      /* CATEGORIES I SUBCATEGORIES */
+      if (node.type === 'category' || node.type === 'subcategory') {
+        let html = '<h1 class="list-title">' + escapeHtml(node.name[lang]) + '</h1>';
+        html += '<div class="grid">';
+        for (let key in node.children) {
+          let child = node.children[key];
+          let hasImg = child.type === 'product' && child.image;
+          let pathToChild = JSON.stringify([...currentPath, key]);
+          html += '<div class="card" onclick=\'navigate(' + pathToChild + ')\'>';
+          html += '<button class="admin-edit-btn" onclick=\'event.stopPropagation(); openEditModal(' +
+            JSON.stringify(key) + ')\' title="Editar">✏️</button>';
+          if (hasImg) {
+            html += '<img class="card-img" src="' + escapeAttr(child.image) + '" alt="' +
+              escapeAttr(child.name[lang]) + '" onerror="this.style.display=\'none\'">';
+          } else {
+            html += '<div class="card-placeholder">Més Que Pa</div>';
+          }
+          html += '<div class="card-content">';
+          html += '<div class="card-title">' + escapeHtml(child.name[lang]) + '</div>';
+          if (child.type === 'product' && child.price) {
+            html += '<div class="card-price">' + escapeHtml(child.price) + ' €</div>';
+          }
+          html += '</div></div>';
+        }
+        html += '</div>';
+        if (isAdmin) {
+          const typeToAdd = node.type === 'category' ? 'subcategory' : 'product';
+          html += '<button class="add-btn" onclick=\'openAddModal(' + JSON.stringify(typeToAdd) +
+            ')\'>+ Afegir ' + (typeToAdd === 'subcategory' ? 'Subcategoria' : 'Producte') + '</button>';
+        }
+        app.innerHTML = html;
+        return;
+      }
+
+      /* PRODUCTE */
+      if (node.type === 'product') {
+        let html = '<div class="product-view">';
+        html += '<button class="admin-edit-btn" onclick=\'openEditModal(' + JSON.stringify(node.id) +
+          ', true)\' title="Editar">✏️</button>';
+        if (node.image) {
+          html += '<img class="product-img" src="' + escapeAttr(node.image) + '" alt="' +
+            escapeAttr(node.name[lang]) + '" onerror="this.style.display=\'none\'">';
+        } else {
+          html += '<div class="product-placeholder">Més Que Pa</div>';
+        }
+        html += '<div class="product-info">';
+        html += '<h1>' + escapeHtml(node.name[lang]) + '</h1>';
+        html += '<div class="price">' + escapeHtml(node.price || '0.00') + ' €</div>';
+        html += '<div class="desc">' + escapeHtml(node.desc ? node.desc[lang] : '') + '</div>';
+        html += '<div class="ingredients"><strong>Ingredients:</strong><br>' +
+          escapeHtml(node.ingredients ? node.ingredients[lang] : '-') + '</div>';
+        html += '</div></div>';
+        app.innerHTML = html;
+        return;
+      }
+    }
+
+    /* =========================================
+       4. ADMIN
+    ========================================= */
+    function tryAdminLogin() {
+      if (isAdmin) return;
+      let pwd = prompt("Introdueix la contrasenya d'administrador:");
+      if (pwd === ADMIN_PASSWORD) {
+        isAdmin = true;
+        document.body.classList.add('is-admin');
+        document.getElementById('adminBar').classList.add('show');
+        render();
+      } else if (pwd !== null) {
+        alert("Contrasenya incorrecta.");
+      }
+    }
+
+    function logoutAdmin() {
+      isAdmin = false;
+      document.body.classList.remove('is-admin');
+      document.getElementById('adminBar').classList.remove('show');
+      render();
+    }
+
+    function saveData() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      render();
+    }
+
+    function exportJson() {
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'db.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    function importJson(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          data = imported;
+          saveData();
+          alert('db.json importat correctament.');
+        } catch (err) {
+          alert('El fitxer no és un JSON vàlid.');
+        }
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+
+    async function restoreFromDb() {
+      try {
+        const res = await fetch('db.json', { cache: 'no-store' });
+        if (!res.ok) throw new Error('No s\'ha pogut llegir db.json');
+        data = await res.json();
+        localStorage.removeItem(STORAGE_KEY);
+        render();
+        alert('S\'ha restaurat db.json i s\'han eliminat els canvis locals.');
+      } catch (e) {
+        alert('Error restaurant db.json (si estàs en local, no funciona). Fes servir "Importar db.json".');
+      }
+    }
+
+    function openAddModal(typeToAdd) {
+      const modal = document.getElementById('modalOverlay');
+      const content = document.getElementById('modalContent');
+
+      content.innerHTML = `
+        <h3>Nou element</h3>
+        <div class="form-group">
+          <label>Nom (Català)</label>
+          <input type="text" id="f-name-ca">
+        </div>
+        <div class="form-group">
+          <label>Nom (Anglès)</label>
+          <input type="text" id="f-name-en">
+        </div>
+        ${typeToAdd === 'product' ? `
+          <div class="form-group">
+            <label>Preu (€)</label>
+            <input type="text" id="f-price">
+          </div>
+          <div class="form-group">
+            <label>URL Imatge</label>
+            <input type="text" id="f-image">
+          </div>
+          <div class="form-group">
+            <label>Descripció (CA)</label>
+            <textarea id="f-desc-ca"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Descripció (EN)</label>
+            <textarea id="f-desc-en"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Ingredients (CA)</label>
+            <textarea id="f-ing-ca"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Ingredients (EN)</label>
+            <textarea id="f-ing-en"></textarea>
+          </div>
+        ` : ''}
+        <div class="modal-actions">
+          <button class="btn btn-secondary" onclick="closeModal()">Cancel·lar</button>
+          <button class="btn btn-primary" onclick='saveNewItem(${JSON.stringify(typeToAdd)})'>Guardar</button>
+        </div>
+      `;
+      modal.classList.add('show');
+    }
+
+    function openEditModal(id, isProductView = false) {
+      const node = getCurrentNode();
+      if (!node) return;
+      const item = isProductView ? node : node.children[id];
+      if (!item) return;
+      const modal = document.getElementById('modalOverlay');
+      const content = document.getElementById('modalContent');
+
+      content.innerHTML = `
+        <h3>Editar: ${escapeHtml(item.name.ca)}</h3>
+        <div class="form-group">
+          <label>Nom (Català)</label>
+          <input type="text" id="f-name-ca" value="${escapeAttr(item.name.ca)}">
+        </div>
+        <div class="form-group">
+          <label>Nom (Anglès)</label>
+          <input type="text" id="f-name-en" value="${escapeAttr(item.name.en)}">
+        </div>
+        ${item.type === 'product' ? `
+          <div class="form-group">
+            <label>Preu (€)</label>
+            <input type="text" id="f-price" value="${escapeAttr(item.price || '')}">
+          </div>
+          <div class="form-group">
+            <label>URL Imatge</label>
+            <input type="text" id="f-image" value="${escapeAttr(item.image || '')}">
+          </div>
+          <div class="form-group">
+            <label>Descripció (CA)</label>
+            <textarea id="f-desc-ca">${escapeHtml(item.desc ? item.desc.ca : '')}</textarea>
+          </div>
+          <div class="form-group">
+            <label>Descripció (EN)</label>
+            <textarea id="f-desc-en">${escapeHtml(item.desc ? item.desc.en : '')}</textarea>
+          </div>
+          <div class="form-group">
+            <label>Ingredients (CA)</label>
+            <textarea id="f-ing-ca">${escapeHtml(item.ingredients ? item.ingredients.ca : '')}</textarea>
+          </div>
+          <div class="form-group">
+            <label>Ingredients (EN)</label>
+            <textarea id="f-ing-en">${escapeHtml(item.ingredients ? item.ingredients.en : '')}</textarea>
+          </div>
+        ` : ''}
+        <div class="modal-actions">
+          ${item.type !== 'root' ? `
+            <button class="btn btn-danger" onclick='deleteItem(${JSON.stringify(id)}, ${isProductView})'>Esborrar</button>
+          ` : ''}
+          <button class="btn btn-secondary" onclick="closeModal()">Cancel·lar</button>
+          <button class="btn btn-primary" onclick='updateItem(${JSON.stringify(id)}, ${isProductView})'>Guardar canvis</button>
+        </div>
+      `;
+      modal.classList.add('show');
+    }
+
+    function closeModal() {
+      document.getElementById('modalOverlay').classList.remove('show');
+    }
+
+    function getFormData() {
+      const d = {
+        name: {
+          ca: document.getElementById('f-name-ca').value,
+          en: document.getElementById('f-name-en').value
+        }
+      };
+      if (document.getElementById('f-price')) {
+        d.price = document.getElementById('f-price').value;
+        d.image = document.getElementById('f-image').value;
+        d.desc = {
+          ca: document.getElementById('f-desc-ca').value,
+          en: document.getElementById('f-desc-en').value
+        };
+        d.ingredients = {
+          ca: document.getElementById('f-ing-ca').value,
+          en: document.getElementById('f-ing-en').value
+        };
+      }
+      return d;
+    }
+
+    function saveNewItem(type) {
+      const node = getCurrentNode();
+      if (!node) return;
+      const formData = getFormData();
+
+      if (!formData.name.ca.trim()) {
+        alert('El nom en català és obligatori.');
+        return;
+      }
+
+      const baseId = formData.name.ca
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]/g, '');
+      const newId = (baseId || 'item') + Date.now().toString().slice(-4);
+
+      if (type === 'subcategory') {
+        node.children[newId] = {
+          id: newId,
+          type: 'subcategory',
+          name: formData.name,
+          children: {}
+        };
+      } else {
+        node.children[newId] = {
+          id: newId,
+          type: 'product',
+          name: formData.name,
+          price: formData.price || '',
+          image: formData.image || '',
+          desc: formData.desc,
+          ingredients: formData.ingredients
+        };
+      }
+
+      saveData();
+      closeModal();
+    }
+
+    function updateItem(id, isProductView) {
+      const node = getCurrentNode();
+      if (!node) return;
+      const item = isProductView ? node : node.children[id];
+      if (!item) return;
+      const formData = getFormData();
+
+      if (!formData.name.ca.trim()) {
+        alert('El nom en català és obligatori.');
+        return;
+      }
+
+      item.name = formData.name;
+      if (item.type === 'product') {
+        item.price = formData.price;
+        item.image = formData.image;
+        item.desc = formData.desc;
+        item.ingredients = formData.ingredients;
+      }
+
+      saveData();
+      closeModal();
+    }
+
+    function deleteItem(id, isProductView) {
+      if (!confirm("Segur que vols esborrar aquest element?")) return;
+
+      if (isProductView) {
+        const parentPath = currentPath.slice(0, -1);
+        let parentNode = data;
+        for (let i = 0; i < parentPath.length; i++) {
+          parentNode = parentNode.children[parentPath[i]];
+        }
+        if (parentNode && parentNode.children) {
+          delete parentNode.children[id];
+        }
+        saveData();
+        closeModal();
+        navigate(parentPath);
+      } else {
+        const node = getCurrentNode();
+        if (node && node.children) {
+          delete node.children[id];
+        }
+        saveData();
+        closeModal();
+      }
+    }
+
+    /* =========================================
+       5. UTILITATS
+    ========================================= */
+    function escapeHtml(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, function(c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+    function escapeAttr(s) {
+      return escapeHtml(s);
+    }
+
+    /* =========================================
+       6. INICIALITZACIÓ
+    ========================================= */
+    loadData();
+  </script>
+</body>
 </html>
