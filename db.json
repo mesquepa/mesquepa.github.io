@@ -1,0 +1,521 @@
+{
+  "id": "root",
+  "type": "root",
+  "children": {
+    "pa": {
+      "id": "pa",
+      "type": "category",
+      "name": {
+        "ca": "PA I REBOSTERIA",
+        "en": "BREAD & BAKERY"
+      },
+      "color": "green",
+      "children": {
+        "pans": {
+          "id": "pans",
+          "type": "subcategory",
+          "name": {
+            "ca": "Pa",
+            "en": "Bread"
+          },
+          "children": {
+            "integrals": {
+              "id": "integrals",
+              "type": "subcategory",
+              "name": {
+                "ca": "Integrals",
+                "en": "Wholemeal"
+              },
+              "children": {
+                "xeixa": {
+                  "id": "xeixa",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Xeixa",
+                    "en": "Wholemeal Xeixa Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Xeixa.",
+                    "en": "Wholemeal bread made with Xeixa flour."
+                  },
+                  "price": "3.50",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Xeixa, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Xeixa flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "xeixa-llavors": {
+                  "id": "xeixa-llavors",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Xeixa amb Llavors",
+                    "en": "Wholemeal Xeixa Bread with Seeds"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Xeixa amb llavors.",
+                    "en": "Wholemeal bread made with Xeixa flour and seeds."
+                  },
+                  "price": "3.80",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Xeixa, llavors, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Xeixa flour, seeds, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "xeixa-anous": {
+                  "id": "xeixa-anous",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Xeixa amb Anous",
+                    "en": "Wholemeal Xeixa Bread with Walnuts"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Xeixa amb anous.",
+                    "en": "Wholemeal bread made with Xeixa flour and walnuts."
+                  },
+                  "price": "4.20",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Xeixa, anous, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Xeixa flour, walnuts, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "espelta": {
+                  "id": "espelta",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa d'Espelta",
+                    "en": "Wholemeal Spelt Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina d'Espelta.",
+                    "en": "Wholemeal bread made with spelt flour."
+                  },
+                  "price": "4.00",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral d'Espelta, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal spelt flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "espelta-carbassa": {
+                  "id": "espelta-carbassa",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa d'Espelta amb Llavors de Carabassa",
+                    "en": "Wholemeal Spelt Bread with Pumpkin Seeds"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina d'Espelta amb llavors de carabassa.",
+                    "en": "Wholemeal bread made with spelt flour and pumpkin seeds."
+                  },
+                  "price": "4.30",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral d'Espelta, llavors de carabassa, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal spelt flour, pumpkin seeds, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "espelta-sesam": {
+                  "id": "espelta-sesam",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa d'Espelta i Sésam",
+                    "en": "Wholemeal Spelt & Sesame Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina d'Espelta i sésam.",
+                    "en": "Wholemeal bread made with spelt flour and sesame."
+                  },
+                  "price": "4.20",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral d'Espelta, sésam, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal spelt flour, sesame, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "espelta-segol": {
+                  "id": "espelta-segol",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa d'Espelta i Ségol",
+                    "en": "Wholemeal Spelt & Rye Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina d'Espelta i ségol.",
+                    "en": "Wholemeal bread made with spelt and rye flour."
+                  },
+                  "price": "4.20",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral d'Espelta, farina de ségol, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal spelt flour, rye flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blat-mort": {
+                  "id": "blat-mort",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Blat Mort",
+                    "en": "Wholemeal Blat Mort Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Blat Mort.",
+                    "en": "Wholemeal bread made with Blat Mort flour."
+                  },
+                  "price": "4.00",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Blat Mort, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Blat Mort flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blat-mort-pipes": {
+                  "id": "blat-mort-pipes",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Blat Mort amb Pipes",
+                    "en": "Wholemeal Blat Mort Bread with Sunflower Seeds"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Blat Mort amb pipes.",
+                    "en": "Wholemeal bread made with Blat Mort flour and sunflower seeds."
+                  },
+                  "price": "4.30",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Blat Mort, pipes, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Blat Mort flour, sunflower seeds, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blat-egipci": {
+                  "id": "blat-egipci",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Blat Egipci",
+                    "en": "Wholemeal Egyptian Wheat Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Blat Egipci.",
+                    "en": "Wholemeal bread made with Egyptian wheat flour."
+                  },
+                  "price": "4.00",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Blat Egipci, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Egyptian wheat flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blat-egipci-pipes": {
+                  "id": "blat-egipci-pipes",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Blat Egipci amb Pipes",
+                    "en": "Wholemeal Egyptian Wheat Bread with Sunflower Seeds"
+                  },
+                  "desc": {
+                    "ca": "Pa integral de farina de Blat Egipci amb pipes.",
+                    "en": "Wholemeal bread made with Egyptian wheat flour and sunflower seeds."
+                  },
+                  "price": "4.30",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina integral de Blat Egipci, pipes, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal Egyptian wheat flour, sunflower seeds, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "arros": {
+                  "id": "arros",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa d'Arròs",
+                    "en": "Wholemeal Rice Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa integral d'arròs.",
+                    "en": "Wholemeal rice bread."
+                  },
+                  "price": "4.00",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina d'arròs integral, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Wholemeal rice flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                }
+              }
+            },
+            "morenos": {
+              "id": "morenos",
+              "type": "subcategory",
+              "name": {
+                "ca": "Morenos",
+                "en": "Brown"
+              },
+              "children": {
+                "blat-mort-moreno": {
+                  "id": "blat-mort-moreno",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Blat Mort Moreno",
+                    "en": "Brown Blat Mort Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa moreno de farina de Blat Mort.",
+                    "en": "Brown bread made with Blat Mort flour."
+                  },
+                  "price": "3.80",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina de Blat Mort, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Blat Mort flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blat-mort-lli-aubercoc": {
+                  "id": "blat-mort-lli-aubercoc",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa de Blat Mort amb Lli i Aubercoc",
+                    "en": "Brown Blat Mort Bread with Flax & Apricot"
+                  },
+                  "desc": {
+                    "ca": "Pa moreno de farina de Blat Mort amb lli i aubercoc.",
+                    "en": "Brown bread made with Blat Mort flour, flax and apricot."
+                  },
+                  "price": "4.30",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina de Blat Mort, lli, aubercoc, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Blat Mort flour, flax, apricot, Bioreal yeast, revitalised water and sea salt."
+                  }
+                }
+              }
+            },
+            "blancs": {
+              "id": "blancs",
+              "type": "subcategory",
+              "name": {
+                "ca": "Blancs",
+                "en": "White"
+              },
+              "children": {
+                "blanc-llis": {
+                  "id": "blanc-llis",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa Blanc Llis",
+                    "en": "Plain White Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa blanc de farina d'Espelta i Blat.",
+                    "en": "White bread made with spelt and wheat flour."
+                  },
+                  "price": "2.50",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina d'Espelta, farina de blat, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Spelt flour, wheat flour, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blanc-llavors": {
+                  "id": "blanc-llavors",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa Blanc amb Llavors",
+                    "en": "White Bread with Seeds"
+                  },
+                  "desc": {
+                    "ca": "Pa blanc de farina d'Espelta i Blat amb llavors.",
+                    "en": "White bread made with spelt and wheat flour and seeds."
+                  },
+                  "price": "2.80",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farina d'Espelta, farina de blat, llavors, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Spelt flour, wheat flour, seeds, Bioreal yeast, revitalised water and sea salt."
+                  }
+                },
+                "blanc-curcuma": {
+                  "id": "blanc-curcuma",
+                  "type": "product",
+                  "name": {
+                    "ca": "Pa Blanc amb Cúrcuma",
+                    "en": "Turmeric White Bread"
+                  },
+                  "desc": {
+                    "ca": "Pa amb cúrcuma de farines d'Espelta, Blat i Blat Mort.",
+                    "en": "Turmeric bread made with spelt, wheat and Blat Mort flours."
+                  },
+                  "price": "3.20",
+                  "image": "",
+                  "ingredients": {
+                    "ca": "Farines d'Espelta, Blat i Blat Mort, cúrcuma, llevat Bioreal, aigua vital·litzada i sal marina.",
+                    "en": "Spelt, wheat and Blat Mort flours, turmeric, Bioreal yeast, revitalised water and sea salt."
+                  }
+                }
+              }
+            }
+          }
+        },
+        "rebosteria": {
+          "id": "rebosteria",
+          "type": "subcategory",
+          "name": {
+            "ca": "Rebosteria",
+            "en": "Bakery"
+          },
+          "children": {
+            "galetes-oli": {
+              "id": "galetes-oli",
+              "type": "product",
+              "name": {
+                "ca": "Galetes d'Oli",
+                "en": "Olive Oil Biscuits"
+              },
+              "desc": {
+                "ca": "Galetes integrals d'espelta amb llavoretes de lli. Salades.",
+                "en": "Wholemeal spelt biscuits with flax seeds. Savoury."
+              },
+              "price": "5.00",
+              "image": "",
+              "ingredients": {
+                "ca": "Farina integral d'espelta, oli d'oliva, llavors de lli, sal marina.",
+                "en": "Wholemeal spelt flour, olive oil, flax seeds, sea salt."
+              }
+            },
+            "galetes-anis": {
+              "id": "galetes-anis",
+              "type": "product",
+              "name": {
+                "ca": "Galetes d'Anís",
+                "en": "Aniseed Biscuits"
+              },
+              "desc": {
+                "ca": "Galetes cruixents i amb un tòc d'anís. Dolces.",
+                "en": "Crunchy biscuits with a hint of aniseed. Sweet."
+              },
+              "price": "5.00",
+              "image": "",
+              "ingredients": {
+                "ca": "Farina, sucre, anís, oli, llevat i sal.",
+                "en": "Flour, sugar, aniseed, oil, yeast and salt."
+              }
+            },
+            "galetes-civada-sesam": {
+              "id": "galetes-civada-sesam",
+              "type": "product",
+              "name": {
+                "ca": "Galetes de Civada i Sésam",
+                "en": "Oat & Sesame Biscuits"
+              },
+              "desc": {
+                "ca": "Galetes cruixents, dolces i molt energètiques.",
+                "en": "Crunchy, sweet and very energising biscuits."
+              },
+              "price": "5.50",
+              "image": "",
+              "ingredients": {
+                "ca": "Civada, sésam, sucre, oli i sal.",
+                "en": "Oats, sesame, sugar, oil and salt."
+              }
+            },
+            "magdalenes": {
+              "id": "magdalenes",
+              "type": "product",
+              "name": {
+                "ca": "Magdalenes Veganes",
+                "en": "Vegan Muffins"
+              },
+              "desc": {
+                "ca": "Magdalenes veganes sense sucre.",
+                "en": "Vegan, sugar-free muffins."
+              },
+              "price": "6.00",
+              "image": "",
+              "ingredients": {
+                "ca": "Farina integral d'espelta, xia, xarop d'agave, llet de civada, oli d'oliva extra, oli de gira-sol, vainilla, bicarbonat Bioreal i sal marina.",
+                "en": "Wholemeal spelt flour, chia, agave syrup, oat milk, extra virgin olive oil, sunflower oil, vanilla, Bioreal bicarbonate and sea salt."
+              }
+            }
+          }
+        }
+      }
+    },
+    "probiotics": {
+      "id": "probiotics",
+      "type": "category",
+      "name": {
+        "ca": "PROBIÒTICS",
+        "en": "PROBIOTICS"
+      },
+      "color": "red",
+      "children": {
+        "kimchi": {
+          "id": "kimchi",
+          "type": "product",
+          "name": {
+            "ca": "Kimchi",
+            "en": "Kimchi"
+          },
+          "desc": {
+            "ca": "Increïble aliment probiòtic i gran complement gastronòmic per completar les menjades. Sense pasteuritzar.",
+            "en": "An incredible probiotic food and a great culinary accompaniment to complete your meals. Unpasteurised."
+          },
+          "price": "7.00",
+          "image": "",
+          "ingredients": {
+            "ca": "Col de varietat local fermentada 8/10 setmanes, llet d'arròs i coco, ceba tendre, alls, gingebre, cayena, pebre bo, cúrcuma, comí negre.",
+            "en": "Locally grown cabbage fermented for 8–10 weeks, rice and coconut milk, spring onion, garlic, ginger, cayenne, allspice, turmeric, black cumin."
+          }
+        },
+        "kombucha": {
+          "id": "kombucha",
+          "type": "product",
+          "name": {
+            "ca": "Tè Kombucha",
+            "en": "Kombucha Tea"
+          },
+          "desc": {
+            "ca": "Beguda artesana refrescant, enzimàtica i probiòtica. BIO.",
+            "en": "A refreshing, enzyme-rich, probiotic artisan drink. Organic."
+          },
+          "price": "4.50",
+          "image": "",
+          "ingredients": {
+            "ca": "Tè negre i verd, sucre de canya, aigua vital·litzada i cultiu.",
+            "en": "Black and green tea, cane sugar, revitalised water and culture."
+          }
+        }
+      }
+    },
+    "artesanies": {
+      "id": "artesanies",
+      "type": "category",
+      "name": {
+        "ca": "ARTESANIES",
+        "en": "ARTISAN GOODS"
+      },
+      "color": "yellow",
+      "children": {
+        "altres-conserves": {
+          "id": "altres-conserves",
+          "type": "product",
+          "name": {
+            "ca": "Altres Conserves",
+            "en": "Other Preserves"
+          },
+          "desc": {
+            "ca": "Conserves artesanes de temporada.",
+            "en": "Seasonal artisan preserves."
+          },
+          "price": "",
+          "image": "",
+          "ingredients": {
+            "ca": "Fruita o verdura de temporada, sucre, vinagre i espècies.",
+            "en": "Seasonal fruit or vegetables, sugar, vinegar and spices."
+          }
+        }
+      }
+    }
+  }
+}
